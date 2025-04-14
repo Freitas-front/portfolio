@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00bfff;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff88, 0 0 20px #00bfff55;
+  }
+  
+  .hero-text p {
+    font-size: 1.25rem;
+    color: #ccc;
+  }
+  
+  .linguagens,
+  .contato {
+    margin-bottom: 2rem;
+  }
+  
+  .linguagens h2,
+  .contato h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icons {
+    font-size: 3rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  a {
+    color: #00bfff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 600px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  }  
+  
+  .frase {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* ou ajuste conforme o espaço que quiser */
+  margin-bottom: 2rem;
+  text-align: center;
+  }
+  
+  .objetivo,
+  .habilidades,
+  .cursos {
+    margin-bottom: 2.5rem;
+  }
+  
+  .objetivo p {
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  .habilidades ul,
+  .cursos ul {
+    list-style: square;
+    padding-left: 1.5rem;
+    color: #eee;
+  }
+  
+  .habilidades li,
+  .cursos li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00bfff;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .typewriter {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #00bfff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #00bfff;
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, hide-caret 0s 2.7s forwards;
+  }
+  
+  /* Efeito de digitação */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* Remove a barra de digitação (cursor) ao final */
+  @keyframes hide-caret {
+    to { border-right: none; }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
